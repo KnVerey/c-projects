@@ -1,13 +1,13 @@
 For Sept 18:
- ☐ free_string_buffer()
+ ✔ free_string_buffer() @done (14-10-23 13:25)
 
- ☐ ['hello', 'testx', 'blaxx'].reverse.join
+ ✔ ['hello', 'testx', 'blaxx'].reverse.join @done (14-10-23 13:25)
 
- ☐ [...].shuffle.join
+ ✔ [...].shuffle.join @done (14-10-23 13:25)
 
- ☐ [...].uniq.join
+ ✔ [...].uniq.join @done (14-10-23 13:25)
 
- ☐ **BONUS**: [...].select{ ... }
+ ✔ **BONUS**: [...].select{ ... } @done (14-10-23 13:25)
    returns new buffer with elements for which filter_function() is != 0
    select(struct string_buffer *buf, *((int)filter_function(char*))
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
