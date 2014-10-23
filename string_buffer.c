@@ -16,11 +16,11 @@ struct string_buffer* new_buffer() {
 }
 
 struct string_buffer* copy_buffer(struct string_buffer *buf) {
-  struct string_buffer *newbuf = malloc(sizeof(struct string_buffer));
+  struct string_buffer *newbuf = new_buffer();
   newbuf->count = buf->count;
   newbuf->strings = NULL;
   if(newbuf->count > 0) {
-    newbuf->strings = malloc(sizeof(char*) * (buf->count + 1));
+    newbuf->strings = malloc(sizeof(char*) * (buf->count));
     for (int i = 0; i < buf->count; ++i)
     {
       newbuf->strings[i] = buf->strings[i];
@@ -85,11 +85,13 @@ void reverse(struct string_buffer *buf) {
 
 // [...].shuffle.join
 void shuffle(struct string_buffer *buf) {
+  // all permutations should be equally likely. This won't work well for large #s of strings.
+  // could view shuffle as making and filling a new one with rand indexes from the old
   if(buf->count == 0)
     return;
 
   int position1, position2;
-  for (int i = rand() % 11; i > 0; --i)
+  for (int i = rand() % buf->count; i > 0; --i)
   {
     position1 = (rand() % buf->count);
     position2 = (rand() % buf->count);
@@ -103,7 +105,7 @@ void removestr(struct string_buffer *buf, int index) {
     buf->strings[i] = buf->strings[i+1];
   }
   buf->count--;
-  realloc(buf->strings, sizeof(char*) * buf->count + 1);
+  realloc(buf->strings, sizeof(char*) * buf->count);
 }
 
 void uniq(struct string_buffer *buf) {
@@ -162,10 +164,9 @@ int main(void) {
   uniq(buf);
   printf("Unique: %s\n", join(buf, ' '));
 
-  int (*filter)(char*);
-  filter = &containsx;
-  struct string_buffer *filteredbuf = select(buf, filter);
+  struct string_buffer *filteredbuf = select(buf, &containsx);
   printf("Filtered: %s\n", join(filteredbuf, ' '));
 
   free_string_buffer(buf);
+  write(1, "hello", 5);
 }

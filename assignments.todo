@@ -1,17 +1,22 @@
 For Sept 18:
- ✔ free_string_buffer() @done (14-10-23 13:25)
-
- ✔ ['hello', 'testx', 'blaxx'].reverse.join @done (14-10-23 13:25)
-
- ✔ [...].shuffle.join @done (14-10-23 13:25)
-
- ✔ [...].uniq.join @done (14-10-23 13:25)
-
- ✔ **BONUS**: [...].select{ ... } @done (14-10-23 13:25)
-   returns new buffer with elements for which filter_function() is != 0
-   select(struct string_buffer *buf, *((int)filter_function(char*))
+ ☐ make shuffle better
+ ☐ re-read linked lists
+ ☐ determine whether a linked list has a loop
+ ☐ if it has a loop, is the whole list a circle? How many elements are in the loop?
+ ☐ exercise 5.4 (bit manipulation thought question)
+ ☐ read man pages for open, read, write, socket
+ ☐ write a program that opens one file for reading and one file for writing, reads from the one, writes to the other and then closes both - in C
+ ☐ read https://en.wikipedia.org/wiki/Everything_is_a_file
+ ☐ read https://en.wikipedia.org/wiki/File_descriptor
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
- ✔ For Sept 11: @done (14-09-10 18:09)
+ ✔ free_string_buffer() @done (14-10-23 13:25) @project(For Sept 18)
+ ✔ [...].uniq.join @done (14-10-23 13:25) @project(For Sept 18)
+ ✔ [...].shuffle.join @done (14-10-23 13:25) @project(For Sept 18)
+ ✔ ['hello', 'testx', 'blaxx'].reverse.join @done (14-10-23 13:25) @project(For Sept 18)
+ ✔ **BONUS**: [...].select{ ... } @done (14-10-23 13:25) @project(For Sept 18)
+  returns new buffer with elements for which filter_function() is != 0
+  select(struct string_buffer *buf, *((int)filter_function(char*))
  ✔ implement string class (string.c) @done (14-09-10 18:09)
  ✔ finish version of unique.c that uses as few BITS as possible @done (14-09-10 18:09)
+ ✔ For Sept 11: @done (14-09-10 18:09)
