@@ -1,0 +1,35 @@
+a =     10101011
+b =     11001111
+a | b = 11101111
+a & b = 10001011
+a ^ b = 01100100
+~a    = 01010100
+
+a = 2  = 00000010
+b = 5  = 00000110
+a << b = 01000000
+
+a = 00100100
+    x    x
+
+a & 00000100
+a = a | 10000000
+
+1 << 5
+100000
+
+255 = 11111111
+    +        1
+    -----------
+     100000000
+
+
+O(n)
+O(n*n)
+
+
+if ((count_keeper[current_index] & (1<<current_bit)) == 0){
+  count_keeper[current_index] = count_keeper[current_index] | (1<<current_index);
+} else {
+  return 0;
+}
