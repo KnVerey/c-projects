@@ -1,5 +1,4 @@
-For Sept 18:
- ☐ make shuffle better
+For Oct 30:
  ☐ re-read linked lists
  ☐ determine whether a linked list has a loop
  ☐ if it has a loop, is the whole list a circle? How many elements are in the loop?
@@ -10,6 +9,7 @@ For Sept 18:
  ☐ read https://en.wikipedia.org/wiki/File_descriptor
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ make shuffle better @done (14-10-31 18:26) @project(For Oct 30)
  ✔ free_string_buffer() @done (14-10-23 13:25) @project(For Sept 18)
  ✔ [...].uniq.join @done (14-10-23 13:25) @project(For Sept 18)
  ✔ [...].shuffle.join @done (14-10-23 13:25) @project(For Sept 18)

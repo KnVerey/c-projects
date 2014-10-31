@@ -84,18 +84,16 @@ void reverse(struct string_buffer *buf) {
 }
 
 // [...].shuffle.join
+// Fisher-Yates shuffle: http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
 void shuffle(struct string_buffer *buf) {
-  // all permutations should be equally likely. This won't work well for large #s of strings.
-  // could view shuffle as making and filling a new one with rand indexes from the old
   if(buf->count == 0)
     return;
 
-  int position1, position2;
-  for (int i = rand() % buf->count; i > 0; --i)
+  int swap_position;
+  for (int i = buf->count - 1; i > 0; --i)
   {
-    position1 = (rand() % buf->count);
-    position2 = (rand() % buf->count);
-    swapstrs(buf, position1, position2);
+    swap_position = (rand() % i);
+    swapstrs(buf, i, swap_position);
   }
 }
 
@@ -155,7 +153,6 @@ int main(void) {
   append(buf, "blaxx");
   append(buf, "boggle");
 
-  printf("%d\n", buf->count);
   printf("Original: %s\n", join(buf, ' '));
   reverse(buf);
   printf("Reversed: %s\n", join(buf, ' '));
@@ -168,5 +165,4 @@ int main(void) {
   printf("Filtered: %s\n", join(filteredbuf, ' '));
 
   free_string_buffer(buf);
-  write(1, "hello", 5);
 }
