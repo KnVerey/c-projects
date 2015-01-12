@@ -1,14 +1,17 @@
-For Oct 30:
- ☐ re-read linked lists
- ☐ determine whether a linked list has a loop
- ☐ if it has a loop, is the whole list a circle? How many elements are in the loop?
- ☐ exercise 5.4 (bit manipulation thought question)
- ☐ read man pages for open, read, write, socket
- ☐ write a program that opens one file for reading and one file for writing, reads from the one, writes to the other and then closes both - in C
+
  ☐ read https://en.wikipedia.org/wiki/Everything_is_a_file
  ☐ read https://en.wikipedia.org/wiki/File_descriptor
+ ☐ read man pages for open, read, write, socket
+ ☐ write a program that opens one file for reading and one file for writing, reads from the one, writes to the other and then closes both - in C
+ ☐ (ultimately, will be building echo server and then chat server/client)
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ prove that using two pointers, one that increments by 1 and the other that increments by 2, will show loop b/c will meet @done (15-01-12 17:19)
+ ✔ exercise 5.4 (bit manipulation thought question) (n & (n+1)) == 0 @done (15-01-12 16:31) @project(For Oct 30)
+ ✔ determine whether a linked list has a loop. if it has a loop, is the whole list a circle? How many elements are in the loop? @done (15-01-12 16:31) @project(For Oct 30)
+ ✔ collect the addresses from the .next pointers in an array, comparing existing values as you traverse; if you find a duplicate, you've (re)entered a loop. Super expensive if a lot of nodes. Could compute node length easily once found though, using position in addresses array @done (15-01-12 16:31) @project(For Oct 30)
+ ✔ For a circle specifically, traverse looking for a next pointer with the same reference as the head. @done (15-01-12 16:31) @project(For Oct 30)
+ ✔ re-read linked lists @done (15-01-12 00:25) @project(For Oct 30)
  ✔ make shuffle better @done (14-10-31 18:26) @project(For Oct 30)
  ✔ free_string_buffer() @done (14-10-23 13:25) @project(For Sept 18)
  ✔ [...].uniq.join @done (14-10-23 13:25) @project(For Sept 18)
