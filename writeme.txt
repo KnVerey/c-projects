@@ -1,0 +1,3 @@
+George Michael may be suffering from what we in the soft-sciences call Obsessive Compulsive Disorder, or the "OC Disorder." You stay on top of her Buddy. Don't be afraid to ride her. Hard. He… she… what's the difference? Oh hear, hear. In the dark, it all looks the same. Early. Coo coo ca chaw. Coo coo ca chaw. Quicken! Premiere! I was once called the worst audience participant Cirque du Soleil ever had. I'm a scholar. I enjoy scholarly pursuits. Suddenly playing with yourself is a scholarly pursuit?
+
+You boys know how to shovel coal? No one was making fun of Andy Griffith. I can't emphasize that enough.
