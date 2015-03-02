@@ -1,6 +1,6 @@
-  ☐ read man pages for socket, connect, what struct sockaddr is and how to create it
-  ☐ call socket to create file descr, call connect to open it, use that file descriptor to actually read/write
-  ☐ goal: nc -l 1234 will output the content of the readme.txt file
+  ✔ read man pages for socket, connect, what struct sockaddr is and how to create it @done (15-03-01 20:27)
+  ✔ call socket to create file descr, call connect to open it, use that file descriptor to actually read/write @done (15-03-01 20:27)
+  ✔ goal: nc -l 1234 will output the content of the readme.txt file @done (15-03-01 20:27)
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
  ✔ write a program that opens one file for reading and one file for writing, reads from the one, writes to the other and then closes both - in C @done (15-02-23 00:10)
